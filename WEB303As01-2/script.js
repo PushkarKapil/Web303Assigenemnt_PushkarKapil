@@ -2,46 +2,20 @@
 	WEB 303 Assignment 1 - jQuery
 	Pushkar Kapil
 */
+$(document).ready(function() { 
+	$("fieldset").keyup (function(){
+		let salary = $("#yearly-salary").val();
+		let percent=$("#percent").val();
 
-$(document).ready(function()
-{
-$("#yearly-salary").keyup(function()
-{
-let val1 = document.getElementById("yearly-salary").value;
+		console.log(salary,percent);
 
-let val2 = document.getElementById("percent").value;
-if(isNaN(val1) || isNaN(val2))
-{
-	alert("please enter number only");
-}
-else if(val1<0 || val2<0)
-{
-	alert("please enter +ve values")
-}
-else
-{
-let val3 = val1*val2/100;
-document.getElementById("amount").textContent ="$"+val3.toFixed(2);
-}
-});
 
-$("#percent").keyup(function()
-{
-let val1 = document.getElementById("yearly-salary").value;
+		let amount = salary * percent/100;
 
-let val2 = document.getElementById("percent").value;
-if(isNaN(val1) || isNaN(val2))
-{
-	alert("please enter number only");
-}
-else if(val1<0 || val2<0)
-{
-	alert("please enter +ve values")
-}
-else
-{
-let val3 = val1*val2/100;
-document.getElementById("amount").textContent ="$"+val3.toFixed(2);;
-}
+		$("#amount").text(amount.toFixed(2));
+
+
+
+		
 });
 });
