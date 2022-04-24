@@ -1,0 +1,41 @@
+#london-wrapper, #windsor-wrapper{
+    display: none;
+    height: 500px;
+}
+body{
+
+    background-color:rebeccapurple;
+    width: 960px;
+    height: 200px;
+    margin: auto;
+    padding: 1px;
+
+}
+h1{
+    text-align: center;
+    text-emphasis-color: salmon;
+
+
+}
+
+.photo-viewer{
+margin: auto;
+border: 2px skyblue;
+
+
+}
+
+.modal{
+align-items: center;
+border: snow;
+position: absolute;
+z-index: 1;
+background-color: tomato;
+padding: 15px;
+border-radius: 20px;
+width: 200px;
+height: auto;
+
+
+}
+
